@@ -12,6 +12,7 @@
 <p>
     <a href="${pageContext.request.contextPath}/admin/category/add">+ Thêm category mới</a>
 </p>
+<a href="${pageContext.request.contextPath}/logout">Đăng xuất</a>
 
 <c:if test="${empty categories}">
     <p>Chưa có category nào.</p>
@@ -44,6 +45,8 @@
                     |
                     <a href="${pageContext.request.contextPath}/admin/category/delete?id=${c.id}"
                        onclick="return confirm('Xoá category này?');">Xoá</a>
+                      
+                
                 </td>
             </tr>
         </c:forEach>

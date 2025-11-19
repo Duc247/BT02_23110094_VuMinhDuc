@@ -1,5 +1,7 @@
 package vn.iotstart.service;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import vn.iotstart.model.UsersModel;
 
 public interface UserService {
@@ -11,5 +13,5 @@ public interface UserService {
 	boolean checkExistUsername(String username);
 	boolean checkExistPhone(String phone);
 	boolean reset_matkhau(String username, String password);
-
+	
 }
