@@ -1,5 +1,7 @@
 package vn.iotstart.service.impl;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import vn.iotstart.dao.UserDao;
 import vn.iotstart.dao.impl.UserDaoImpl;
 import vn.iotstart.model.UsersModel;
@@ -58,6 +60,7 @@ public class UserServiceImpl implements UserService {
 	public boolean reset_matkhau(String username, String password) {
 		return userDao.reset_matkhau(username, password);
 	}
+
 	
 	
 	
