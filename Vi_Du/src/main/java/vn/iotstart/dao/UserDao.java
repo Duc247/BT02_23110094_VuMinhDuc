@@ -1,5 +1,7 @@
 package vn.iotstart.dao;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import vn.iotstart.model.UsersModel;
 
 public interface UserDao {
@@ -9,4 +11,5 @@ public interface UserDao {
 	boolean checkExistUsername(String username);
 	boolean checkExistPhone(String phone);
 	boolean reset_matkhau(String username, String password);
+	
 }
